@@ -10,12 +10,13 @@ public class Test {
     // (C): Perro
     // (C): Pajaro
     public static void main(String[] args) {
+        System.out.println("-- Creamos el objeto 'Perro' y llamamos a su metodo común 'hacerSonido/moverse'");
         Perro perro = new Perro();
-        Pajaro pajaro = new Pajaro();
         perro.hacerSonido();
+        perro.moverse();
+        System.out.println("-- Creamos el objeto 'Pajaro' y llamamos a su metodo a su metodo común 'hacerSonido/moverse'");
+        Pajaro pajaro = new Pajaro();
         pajaro.hacerSonido();
-
-
-
+        pajaro.moverse();
     }
 }

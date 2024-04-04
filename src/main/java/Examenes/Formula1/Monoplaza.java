@@ -14,8 +14,8 @@ public class Monoplaza implements Comparable<Monoplaza>{
     private String nombreEscuderia;
     private Rueda DD, DI, TD, TI;
     private Motor motor;
-    private double tiempoTotal;
-    private double tiempoActual;
+    protected double tiempoTotal;
+    protected double tiempoActual;
     private double tiempoAnterior;
 
     public Monoplaza(int num, String nomPil, String nomEscu, TipoRueda tipoRueda, Motor mot){

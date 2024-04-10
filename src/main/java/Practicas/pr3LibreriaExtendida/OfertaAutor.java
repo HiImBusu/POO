@@ -38,6 +38,6 @@ public class OfertaAutor implements OfertaFlex{
     @Override
     public String toString() {
         // 20.0%[George Orwell, Isaac Asimov]
-        return String.format("%.2f%% %s", porcDescuento, Arrays.toString(autoresOferta));
+        return String.format("%.2f%%%s", porcDescuento * 100, Arrays.toString(autoresOferta));
     }
 }

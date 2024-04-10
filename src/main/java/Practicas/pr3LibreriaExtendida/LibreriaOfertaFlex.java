@@ -30,4 +30,9 @@ public class LibreriaOfertaFlex extends Libreria{
         }
         anyadirLibro(lib);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s\n%s", oferta, super.toString());
+    }
 }

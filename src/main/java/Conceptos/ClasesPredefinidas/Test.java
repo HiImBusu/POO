@@ -1,5 +1,10 @@
 package Conceptos.ClasesPredefinidas;
 
+import Conceptos.Abstract.Cat;
+import Conceptos.ClasesPredefinidas.Object.Persona;
+
+import java.util.Random;
+
 public class Test {
     /*
     * Paquetes de java principales:
@@ -50,12 +55,28 @@ public class Test {
     * */
     public static void main(String[] args) {
         System.out.println("-- Object (Ejemplos)");
+        Persona p = new Persona("Marco", 29);
+        Persona p2 = new Persona("marco", 29);
 
+        System.out.println(p.hashCode());
+        System.out.println(p2.hashCode());
+        String cad = "Marco";
+        if(cad.compareToIgnoreCase("ana") < 0){
+            System.out.println("Marco < ana");
+        }else if(cad.compareToIgnoreCase("ana") == 0){
+            System.out.println("Iguales");
+        }else{
+            System.out.println("Marco > ana");
+        }
 
         System.out.println("\n-- String/StringBuilder (Ejemplos)");
         String str = "Hola marco!";
         // str = "Adios marco!"; ESTO NO DEBEMOS HACERLO PORQUE ES INMUTABLE. HACE COPIAS Y DESPERDICIA MEMORIA!!!!
 
+        Random r = new Random();
+        for(int i = 1; i <= 5; i++){
+            System.out.println(r.nextDouble());
+        }
 
 
 

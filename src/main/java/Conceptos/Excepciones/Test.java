@@ -32,14 +32,28 @@ public class Test {
     *       que sea ni anunciada ni capturada
     *
     * */
+    public static void imprime_rango_edad(int edad) throws MiExcepcionComproda {
+        // edad <= 0 ===> MiExcepcionNoComprobada
+        // edad < 18 ===> Menor edad
+        // edad < 65 ==> Poblacion activa
+        // edad > 65 ===> MiExcepcionComprobada(Demasiado viejo...)
+        if(edad <= 0)
+            throw new MiExcepcionNoComprobada("Edad negativa");
+        if(edad > 65)
+            throw new MiExcepcionComproda("Demasiado viejito");
+
+        if(edad < 18)
+            System.out.println("Menor de edad");
+        else if(edad < 65)
+            System.out.println("Poblacion activa");
+    }
     public static void main(String[] args) {
-        int edad = 10;
-
-        // Ejemplo 1
-
-        // Ejemplo 2
-
-        // Ejemplo 3
+        int edad = 78;
+        try{
+            imprime_rango_edad(edad);
+        }catch (Exception e){
+            System.out.println("Excepcion lanzada " + e.getMessage());
+        }
     }
 
 }

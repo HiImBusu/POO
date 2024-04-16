@@ -70,4 +70,15 @@ public class Libreria {
         return sj.toString();
         // return libs.toString(); OTRA FORMA MAS FACIL
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Libreria l) &&
+                libs.equals(l.libs);
+    }
+
+    @Override
+    public int hashCode() {
+        return libs.hashCode();
+    }
 }

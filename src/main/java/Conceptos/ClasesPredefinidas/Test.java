@@ -28,8 +28,25 @@ public class Test {
     *                   static String format(...): Formatea una cadena (RECOMENDADO)
     *                   String[] split(String delimitadores): Parte la cadena en un array de cadenas donde usa 'demilimitadores' como el separador
     *
-    *          - StringBuilder: Para cadenas MUTABLES (quieres ir modificandolas)
+    *          - StringBuilder: Para cadenas MUTABLES (quieres ir modificandolas). Se pueden ampliar, reducir y modificar
+    *               Metodos interesantes:
+    *                   - append(String str): Concatena cadenas por el final
+    *                   - insert(int pos, String str): Incrusta cadenas en la posicion que le digas
+    *                   - setChartAt(int pos, char car): Cambia un char de una determinada posicion por otro que le digas
+    *                   - replace(int pos1, int pos2, String str): Cambia lo que este entre pos1 y pos2 por la cadena que le pases
+    *       * Clases envoltorios (wrappers): Clases que "envuelven" los tipos basicos de datos
+    *           Metodos interesantes:
+    *                static valueOf: Equivalente al constructor
+    *               xxxxValue(): Metodo de instancia para obtener el dato del envoltorio
+    *               static xxxx parseXxx(String s): Metodo de clase para crear numeros a partir de cadenas
+    *               compare(n1, n2): Meotods de clase para comparar envoltorios
+    *               hashCode: Modeoto de clase para calcular el hashcode
+    *           Nota: El compilador "envuelve" y "desenvuelve" de forma AUTOMATICA.
     *
+    *       * Random: Genera numeros aleatorios
+    *       * StringJoiner: Para crear una cadena con datos y delimitadores entre los datos
+    *       * Scanner/Path: Para leer de ficheros
+*           * PrintWritter: PAra escribir en ficheros.
     * */
     public static void main(String[] args) {
         System.out.println("-- Object (Ejemplos)");

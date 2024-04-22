@@ -2,6 +2,7 @@ package Examenes.Elecciones;
 
 public class Test {
     public static void main(String[] args) {
+
         Candidata cand1 = new Candidata("MR. FANTÁSTICO", "123", Candidata.Sexo.M, "Los 4 Fantásticos");
         Candidata cand2 = new Candidata("ANTORCHA HUMANA", "321", Candidata.Sexo.M, "Los 4 Fantásticos");
         Candidata cand3 = new Candidata("MUJER INVISIBLE", "456", Candidata.Sexo.F, "Los 4 Fantásticos");

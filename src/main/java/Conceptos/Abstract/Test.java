@@ -29,6 +29,13 @@ package Conceptos.Abstract;
 * */
 public class Test {
     public static void main(String[] args) {
+        Cat c = new Cat(20, "Gato");
+        c.makeNoise();
+        System.out.println(c.getAge());
+
+        Dog d = new Dog(18, "Ralfi");
+        d.makeNoise();
+
 
     }
 }

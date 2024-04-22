@@ -1,5 +1,8 @@
 package Practicas.pr2Libreria;
 
+import java.util.Locale;
+import java.util.Objects;
+
 public class Libro {
     // Atributos
     private static double porcIVA = 10;
@@ -50,5 +53,19 @@ public class Libro {
     }
     public static void setIVA(double iva){
         Libro.porcIVA = iva;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Libro l) &&
+                titulo.equalsIgnoreCase(l.titulo) &&
+                autor.equalsIgnoreCase(l.autor) &&
+                precioBase == l.precioBase;
+    }
+
+    @Override
+    public int hashCode() {
+        // return titulo.toLowerCase().hashCode() + autor.toLowerCase().hashCode() + Double.hashCode(precioBase);
+        return Objects.hash(titulo.toLowerCase(), autor.toLowerCase(), precioBase);
     }
 }

@@ -2,7 +2,7 @@ package Conceptos.ClasesPredefinidas.Object;
 
 import java.util.Objects;
 
-public class Persona {
+public class Persona{
     private String nombre;
     private int edad;
 
@@ -11,21 +11,19 @@ public class Persona {
         edad = e;
     }
 
+
     @Override
     public String toString() {
         // Como se imprime por pantalla
         return String.format("Nombre: %s Edad: %d", nombre, edad);
     }
 
+
     @Override
     public boolean equals(Object obj) {
-        // Como se COMPARAN dos objetos de tipo "Persona"
-        boolean res = false;
-        if(obj instanceof Persona){
-            Persona p = (Persona) obj; // Hacemos el casting a la clase persona
-            res = edad == p.edad && nombre.equalsIgnoreCase(p.nombre);
-        }
-        return res;
+        return
+                (obj instanceof Persona p) &&
+                (nombre.equalsIgnoreCase(p.nombre) && (edad == p.edad));
     }
 
     @Override
@@ -55,6 +53,6 @@ public class Persona {
         // Podemos usar la clase Objets tambien
         int hash5 = Objects.hash(nombre.toLowerCase(), edad);
 
-        return hash1;
+        return hash5;
     }
 }

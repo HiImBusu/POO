@@ -24,6 +24,6 @@ public class OfertaPrecio implements OfertaFlex{
     @Override
     public String toString() {
         // 20.0%(8)
-        return String.format("%.2f%%(%f)", porcDescuento * 100, umbralPrecio);
+        return String.format("%.2f%%(%.2f)", porcDescuento, umbralPrecio);
     }
 }

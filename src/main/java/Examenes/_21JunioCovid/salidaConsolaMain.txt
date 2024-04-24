@@ -1,0 +1,41 @@
+-- Creamos el mapa con los datos de entrada
+ANDALUCIA:
+Almería
+	Distrito(Este_Almeria, 250)
+	Distrito(Norte_Almeria, 120)
+	Distrito(Oeste_Almeria, 180)
+Cádiz
+	Distrito(Este_Cadiz, 350)
+	Distrito(Oeste_Cadiz, 500)
+	Distrito(Sur_Cadiz, 200)
+Córdoba
+	Distrito(Este_Cordoba, 180)
+	Distrito(Norte_Cordoba, 240)
+	Distrito(Sur_Cordoba, 280)
+Granada
+	Distrito(Este_Granada, 200)
+	Distrito(Norte_Granada, 280)
+	Distrito(Sur_Granada, 300)
+Huelva
+	Distrito(Costa_Huelva, 150)
+	Distrito(Sierra_Huelva, 80)
+	Distrito(Sur_Huelva, 120)
+Jaén
+	Distrito(Norte_Jaén, 180)
+	Distrito(Sierra_Jaén, 100)
+	Distrito(Sur_Jaén, 200)
+Málaga
+	Distrito(Centro_Málaga, 6000)
+	Distrito(Costa_Málaga, 7000)
+	Distrito(Norte_Málaga, 3500)
+Sevilla
+	Distrito(Este_Sevilla, 2500)
+	Distrito(Norte_Sevilla, 4000)
+	Distrito(Sur_Sevilla, 5000)
+
+
+-- Obtenemos las provincias que estan en un rango establecido
+[Sierra_Huelva, Sur_Huelva, Norte_Almeria, Sierra_Jaén]
+
+-- Obtenemos las provincias que tenemos que cerrar perimetralmente
+[Sevilla, Málaga]

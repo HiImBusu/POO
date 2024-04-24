@@ -1,0 +1,29 @@
+-- Estado inicial de la gasolinera
+Teatinos =
+	diesel: [200.0, 200.0, 200.0, 200.0]
+	dieselPlus: [50.0, 30.0, 25.0, 10.0]
+	gasolina95: [56.0, 30.0, 20.0, 0.0]
+	gasolina98: [30.0, 25.0, 20.0, 15.0]
+	Repostajes: []
+
+-- Añadimos algunos repostajes
+Teatinos =
+	diesel: [170.0, 150.0, 200.0, 200.0]
+	dieselPlus: [50.0, 30.0, 25.0, 10.0]
+	gasolina95: [0.0, 0.0, 10.0, 0.0]
+	gasolina98: [30.0, 25.0, 20.0, 15.0]
+	Repostajes: [Ticket: 6 (gasolinera: Teatinos, matricula: 3333BBB, litros: 30.0, PRECIO = 48.2, Ticket: 5 (gasolinera: Teatinos, matricula: 3333BBB, litros: 50.0, PRECIO = 80.4, Ticket: 4 (gasolinera: Teatinos, matricula: 2222BBB, litros: 10.0, PRECIO = 17.5, Ticket: 3 (gasolinera: Teatinos, matricula: 2222BBB, litros: 6.0, PRECIO = 10.5, Ticket: 2 (gasolinera: Teatinos, matricula: 1111AAA, litros: 30.0, PRECIO = 52.7, Ticket: 1 (gasolinera: Teatinos, matricula: 1111AAA, litros: 50.0, PRECIO = 87.8]
+
+-- Generamos algun ticket
+Ticket 1111AAA generado correctamente
+
+-- Le metemos algun ticket mas
+Teatinos =
+	diesel: [170.0, 150.0, 200.0, 200.0]
+	dieselPlus: [50.0, 30.0, 25.0, 10.0]
+	gasolina95: [0.0, 0.0, 5.0, 0.0]
+	gasolina98: [30.0, 25.0, 20.0, 15.0]
+	Repostajes: [Ticket: 7 (gasolinera: Teatinos, matricula: 1111AAA, litros: 5.0, PRECIO = 8.8, Ticket: 6 (gasolinera: Teatinos, matricula: 3333BBB, litros: 30.0, PRECIO = 48.2, Ticket: 5 (gasolinera: Teatinos, matricula: 3333BBB, litros: 50.0, PRECIO = 80.4, Ticket: 4 (gasolinera: Teatinos, matricula: 2222BBB, litros: 10.0, PRECIO = 17.5, Ticket: 3 (gasolinera: Teatinos, matricula: 2222BBB, litros: 6.0, PRECIO = 10.5, Ticket: 2 (gasolinera: Teatinos, matricula: 1111AAA, litros: 30.0, PRECIO = 52.7, Ticket: 1 (gasolinera: Teatinos, matricula: 1111AAA, litros: 50.0, PRECIO = 87.8]
+
+-- Comprobamos que le hemos facturado correctamente sus tickets
+Consumo facturado por la matricula 1111AAA: 140,40

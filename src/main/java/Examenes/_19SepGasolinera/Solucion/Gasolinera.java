@@ -14,10 +14,10 @@ public class Gasolinera {
     private TicketOrdenAlternativo ordenAlternativo;
 
     // constantes de clase
-    protected static final String GASOLINA95 = "gasolina95";
-    protected static final String GASOLINA98 = "gasolina98";
-    protected static final String DIESEL = "diesel";
-    protected static final String DIESEL_PLUS = "dieselPlus";
+    public static final String GASOLINA95 = "gasolina95";
+    public static final String GASOLINA98 = "gasolina98";
+    public static final String DIESEL = "diesel";
+    public static final String DIESEL_PLUS = "dieselPlus";
     protected static final int NUM_SURT = 4;
 
     // constante de instancia
@@ -28,6 +28,7 @@ public class Gasolinera {
         this.contador = 1;
         this.repostajes = new HashMap<>();
         this.precios = precios;
+        this.ordenAlternativo = orden;
 
         // 1. Se crea la correspondencia vacia
         this.surtidores = new HashMap<>();
@@ -67,6 +68,9 @@ public class Gasolinera {
             // Uso delimitador el espacio
             sc.useDelimiter("[ ]");
 
+            // Para especificar los decimales con el punto
+            sc.useLocale(Locale.ENGLISH);
+
             int numero_surtidor = sc.nextInt();
             String tipo_gasolina = sc.next();
             double litros = sc.nextDouble();
@@ -102,9 +106,12 @@ public class Gasolinera {
             // Habia algo de gasolina en el surtidor
             if(this.repostajes.get(matricula) == null){
                 // 1º vez
-                this.repostajes.put(matricula, new TreeSet<>());
+                this.repostajes.put(matricula, new TreeSet<>(ordenAlternativo));
             }
-            this.repostajes.get(matricula).add(crearTicket(matricula, litros, precios.get(tipo_combustible)));
+            // Añadimos el ticket
+            this.repostajes.get(matricula).add(crearTicket(matricula, litros_resostados, precios.get(tipo_combustible)));
+            // Descontamos la gasolina del surtidor
+            this.surtidores.get(tipo_combustible).set(surtidor - 1, this.surtidores.get(tipo_combustible).get(surtidor - 1) - litros_resostados);
         }
     }
 
@@ -120,7 +127,7 @@ public class Gasolinera {
             throw new GasolineraException("No existe ningun recibo asociada a esa matricula");
 
         // Generar el fichero
-        try(PrintWriter pw = new PrintWriter(String.format("%s_%s.txt", nombre, matricula))){
+        try(PrintWriter pw = new PrintWriter(String.format("src\\main\\java\\Examenes\\_19SepGasolinera\\%s_%s.txt", nombre, matricula))){
             double total = 0.0;
             for(Ticket t : tickets) {
                 if (!t.getFacturado()) {
@@ -152,7 +159,11 @@ public class Gasolinera {
         for(Map.Entry<String, List<Double>> ent : this.surtidores.entrySet()){
             sj.add(String.format("\t%s: %s", ent.getKey(), ent.getValue()));
         }
-        sj.add(String.format("\tRepostajes: %s", this.repostajes.values()));
+        SortedSet<Ticket> todos_tickets = new TreeSet<>(ordenAlternativo);
+        for(SortedSet<Ticket> tickets : this.repostajes.values()){
+            todos_tickets.addAll(tickets);
+        }
+        sj.add(String.format("\tRepostajes: %s", todos_tickets));
         return sj.toString();
     }
 }

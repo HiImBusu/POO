@@ -1,0 +1,2 @@
+PROMOCION 30,0%: Ticket: 3 (gasolinera: TeatinosPROMO, matricula: 5555DDD, litros: 50.0, PRECIO = 56.3
+TOTAL = 56,3

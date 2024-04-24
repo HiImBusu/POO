@@ -1,5 +1,7 @@
 package Examenes._19SepGasolinera.Solucion;
 
+import java.util.Locale;
+
 public class Ticket implements Comparable<Ticket>{
     private int numero;
     private String nombreGasolinera;
@@ -59,7 +61,7 @@ public class Ticket implements Comparable<Ticket>{
 
     @Override
     public String toString() {
-        return String.format("Ticket: %d (gasolinera: %s, matricula: %s, litros: %.1f, PRECIO = %.1f",
+        return String.format(Locale.ENGLISH, "Ticket: %d (gasolinera: %s, matricula: %s, litros: %.1f, PRECIO = %.1f",
                 numero, nombreGasolinera, matriculaVehiculo, litros, precioTotal());
     }
 }

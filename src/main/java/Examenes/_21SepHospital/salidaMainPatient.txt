@@ -1,0 +1,10 @@
+-- Creamos algunos pacientes
+Patient [name=Luis, surname=Amador, ssn=0812345694, birthYear=1994]
+Patient [name=Ana, surname=Garcia, ssn=0465432167, birthYear=2000]
+Patient [name=Jose, surname=Perez, ssn=0465426107, birthYear=2002]
+
+-- Comparamos igualdad
+Son iguales
+
+-- Comparamos ordenacion
+p1 es menor que p2

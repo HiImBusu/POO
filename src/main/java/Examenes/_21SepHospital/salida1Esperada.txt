@@ -1,0 +1,26 @@
+Hospital: Carlos haya
+Numero de plantas: 3
+Habitaciones disponibles:
+	Room [floor=1, number=4]
+	Room [floor=1, number=5]
+	Room [floor=2, number=1]
+	Room [floor=2, number=2]
+	Room [floor=2, number=3]
+	Room [floor=2, number=4]
+	Room [floor=2, number=5]
+	Room [floor=3, number=1]
+	Room [floor=3, number=2]
+	Room [floor=3, number=3]
+	Room [floor=3, number=4]
+	Room [floor=3, number=5]
+Habitaciones ocupadas:
+	Patient [name=Ana, surname=Ramírez, ssn=1234563456, birthYear=1992] -> Room [floor=1, number=1]
+	Patient [name=Diego, surname=Hernández, ssn=4567895405, birthYear=1998] -> SIN HABITACION ASIGNADA
+	Patient [name=Javier, surname=Díaz, ssn=6789013428, birthYear=2001] -> SIN HABITACION ASIGNADA
+	Patient [name=Luis, surname=Fernández, ssn=2345675420, birthYear=1985] -> Room [floor=1, number=2]
+	Patient [name=Miguel, surname=Ruiz, ssn=8901236524, birthYear=1990] -> SIN HABITACION ASIGNADA
+	Patient [name=Daniel, surname=Ortega, ssn=1234598721, birthYear=1985] -> SIN HABITACION ASIGNADA
+	Patient [name=Valentina, surname=Jiménez, ssn=5678901271, birthYear=1989] -> SIN HABITACION ASIGNADA
+	Patient [name=Sofía, surname=Gómez, ssn=3456781219, birthYear=1974] -> Room [floor=1, number=3]
+	Patient [name=Elena, surname=Moreno, ssn=7890121254, birthYear=1974] -> SIN HABITACION ASIGNADA
+	Patient [name=Paula, surname=Alvarez, ssn=9012349822, birthYear=1974] -> SIN HABITACION ASIGNADA

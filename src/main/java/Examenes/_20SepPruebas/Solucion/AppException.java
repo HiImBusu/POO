@@ -1,0 +1,10 @@
+package Examenes._20SepPruebas.Solucion;
+
+public class AppException extends RuntimeException{
+    public AppException(){
+        super();
+    }
+    public AppException(String str){
+        super(str);
+    }
+}

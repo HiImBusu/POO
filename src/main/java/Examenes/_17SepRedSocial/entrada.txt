@@ -1,0 +1,6 @@
+Usuario1 ; Usuario2 ; este es holis marco el mensaje 1
+Usuario1 ; Usuario3 ; este es el mensaje marco 2
+Usuario1 ; Usuario3 ; este es el mensaje 3
+Usuario2 ; Usuario1 ; este es el mensaje 4
+Usuario3 ; Usuario1 ; este es el mensaje 5
+Usuario3 ; Usuario2 ; este es el mensaje 6

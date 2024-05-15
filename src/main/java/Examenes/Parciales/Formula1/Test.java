@@ -1,4 +1,4 @@
-package Examenes.Formula1;
+package Examenes.Parciales.Formula1;
 
 public class Test {
     public static void main(String[] args) {

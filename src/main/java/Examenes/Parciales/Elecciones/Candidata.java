@@ -1,4 +1,4 @@
-package Examenes.Elecciones;
+package Examenes.Parciales.Elecciones;
 
 public class Candidata {
     // Definiciones internas

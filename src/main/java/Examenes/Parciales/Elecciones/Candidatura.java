@@ -1,4 +1,4 @@
-package Examenes.Elecciones;
+package Examenes.Parciales.Elecciones;
 
 import java.util.ArrayList;
 import java.util.List;

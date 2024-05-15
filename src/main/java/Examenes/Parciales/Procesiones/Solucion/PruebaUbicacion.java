@@ -1,4 +1,4 @@
-package Examenes.Procesiones.Solucion;
+package Examenes.Parciales.Procesiones.Solucion;
 
 public class PruebaUbicacion {
     public static void main(String[] args) {

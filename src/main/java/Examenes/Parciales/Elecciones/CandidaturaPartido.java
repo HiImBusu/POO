@@ -1,4 +1,4 @@
-package Examenes.Elecciones;
+package Examenes.Parciales.Elecciones;
 
 public class CandidaturaPartido extends Candidatura{
     public CandidaturaPartido(String nomb, String circuns){

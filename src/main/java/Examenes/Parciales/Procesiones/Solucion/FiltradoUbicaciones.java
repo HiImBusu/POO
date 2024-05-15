@@ -1,4 +1,4 @@
-package Examenes.Procesiones.Solucion;
+package Examenes.Parciales.Procesiones.Solucion;
 
 import java.util.List;
 

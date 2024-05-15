@@ -1,9 +1,9 @@
-package Examenes.Procesiones;
+package Examenes.Parciales.Procesiones;
 
-import Examenes.Procesiones.Solucion.DistanciaMayor;
-import Examenes.Procesiones.Solucion.Procesion;
-import Examenes.Procesiones.Solucion.ProcesionesException;
-import Examenes.Procesiones.Solucion.TiempoMenor;
+import Examenes.Parciales.Procesiones.Solucion.DistanciaMayor;
+import Examenes.Parciales.Procesiones.Solucion.Procesion;
+import Examenes.Parciales.Procesiones.Solucion.ProcesionesException;
+import Examenes.Parciales.Procesiones.Solucion.TiempoMenor;
 
 public class PruebaProcesion {
     public static void main(String[] args) {

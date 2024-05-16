@@ -1,0 +1,6 @@
+Roque de los Muchachos;Rigel;0.12
+Mauna Kea;Vega;0.26
+Mauna Kea;Rigel;0.17
+Roque de los Muchachos;Sirius;0.11
+Roque de los Muchachos;1.00789
+Teide;Rigel;0.99222
